@@ -14,20 +14,19 @@ export default function Nav() {
   return (
     <Wrapper className="navbar">
       <Link to="/">
-        <NavItem href="#" icon={iconHome} name="Home" />
+        <NavItem icon={iconHome} name="Home" />
       </Link>
-
       <Link to="/testes">
-        <NavItem href="#" icon={iconTests} name="Testes" />
+        <NavItem icon={iconTests} name="Testes" />
       </Link>
       <Link to="/ranking">
-        <NavItem href="#" icon={iconRanking} name="Ranking" />
+        <NavItem icon={iconRanking} name="Ranking" />
       </Link>
       <Link to="/historico">
-        <NavItem href="#" icon={iconHistory} name="Historico" />
+        <NavItem icon={iconHistory} name="Historico" />
       </Link>
       <Link to="/sobre">
-        <NavItem href="#" icon={iconAbout} name="Sobre" />
+        <NavItem icon={iconAbout} name="Sobre" />
       </Link>
     </Wrapper>
   );

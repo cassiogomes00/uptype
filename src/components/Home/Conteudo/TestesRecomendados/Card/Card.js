@@ -1,14 +1,20 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-import Wrapper, { Icone, Name } from './Card.styled';
+import Wrapper from './Card.styled';
+
+import Icon from './Icon/Icon';
+import Name from './Name/Name';
 
 export default function Card(props) {
-  const { href, icon, name } = props;
+  const { link, icon, name } = props;
 
   return (
-    <Wrapper href={href}>
-      <Icone src={icon} alt={`Icone ${name}`} />
-      <Name>{name}</Name>
-    </Wrapper>
+    <Link to={link}>
+      <Wrapper>
+        <Icon src={icon} alt={`Icone ${name}`} />
+        <Name>{name}</Name>
+      </Wrapper>
+    </Link>
   );
 }

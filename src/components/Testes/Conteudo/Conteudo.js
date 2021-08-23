@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Wrapper from './Conteudo.styled';
+import Wrapper from '../../../assets/styles/conteudo.styled';
 import SectionConteudo from './SectionConteudo/SectionConteudo';
 
 import iconAgainstClock from '../../../assets/img/icon-against-clock.png';

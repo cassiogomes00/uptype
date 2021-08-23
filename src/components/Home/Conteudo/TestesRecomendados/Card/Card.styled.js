@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-export default styled.a`
+export default styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,14 +13,3 @@ export default styled.a`
     width: 100%;
   }
 `;
-
-const Icone = styled.img`
-  margin: 10px 10px;
-`;
-
-const Name = styled.span`
-  color: black;
-  text-decoration: none;
-`;
-
-export { Icone, Name };

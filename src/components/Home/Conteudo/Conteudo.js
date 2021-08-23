@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Wrapper from './Conteudo.styled';
+import Wrapper from '../../../assets/styles/conteudo.styled';
 import SectionConteudo from './SectionConteudo/SectionConteudo';
 
 import TestesRecomendados from './TestesRecomendados/TestesRecomendados';
@@ -10,11 +10,11 @@ export default function Conteudo() {
     <Wrapper>
       <SectionConteudo
         titulo="Testes recomendados"
-        href=""
+        link="/testes"
         conteudo={<TestesRecomendados />}
       />
-      <SectionConteudo titulo="Histórico" href="" conteudo="conteudo" />
-      <SectionConteudo titulo="Ranking" href="" conteudo="conteudo" />
+      <SectionConteudo titulo="Histórico" link="#" conteudo="conteudo" />
+      <SectionConteudo titulo="Ranking" link="#" conteudo="conteudo" />
     </Wrapper>
   );
 }

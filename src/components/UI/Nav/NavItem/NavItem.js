@@ -1,13 +1,15 @@
 import React from 'react';
 
-import Wrapper, { Icon } from './NavItem.styled';
+import Wrapper from './NavItem.styled';
+import Icon from './Icon/Icon';
+import Name from './Name/Name';
 
 export default function NavItem(props) {
   const { href, icon, name } = props;
   return (
     <Wrapper href={href}>
       <Icon src={icon} alt={`Ícone ${name}`} />
-      <span>{name}</span>
+      <Name>{name}</Name>
     </Wrapper>
   );
 }

@@ -1,16 +1,23 @@
 import React from 'react';
-import Button from '../../../UI/Button/Button';
 
-import Wrapper, { Titulo, VerMais, Conteudo } from './SectionConteudo.styled';
+import Wrapper from './SectionConteudo.styled';
+
+import { Link } from 'react-router-dom';
+
+import Titulo from './Titulo/Titulo';
+import Button from './Button/Button';
+import Conteudo from './Conteudo/Conteudo';
 
 export default function SectionConteudo(props) {
-  const { titulo, href, conteudo } = props;
+  const { titulo, link, conteudo } = props;
   return (
     <Wrapper>
       <Titulo>{titulo}</Titulo>
-      <VerMais href={href}>
+
+      <Link to={link}>
         <Button>Ver mais</Button>
-      </VerMais>
+      </Link>
+
       <Conteudo>{conteudo}</Conteudo>
     </Wrapper>
   );

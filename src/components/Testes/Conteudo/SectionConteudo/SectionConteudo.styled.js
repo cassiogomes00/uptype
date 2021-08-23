@@ -28,29 +28,3 @@ export default styled.section`
       'botao';
   }
 `;
-
-const Titulo = styled.h1`
-  grid-area: titulo;
-`;
-
-const Icone = styled.img`
-  grid-area: icone;
-
-  justify-self: center;
-
-  width: 100%;
-
-  @media (max-width: 700px) {
-    display: none;
-  }
-`;
-
-const Descricao = styled.p`
-  grid-area: descricao;
-`;
-
-const Botao = styled.div`
-  grid-area: botao;
-`;
-
-export { Titulo, Icone, Descricao, Botao };

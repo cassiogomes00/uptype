@@ -10,9 +10,9 @@ import iconZen from '../../../../assets/img/icon-zen.png';
 export default function TestesRecomendados() {
   return (
     <Wrapper>
-      <Card href="#" icon={iconAgainstClock} name="Contra o relógio" />
-      <Card href="#" icon={iconMaraton} name="Maratona" />
-      <Card href="#" icon={iconZen} name="Zen" />
+      <Card link="#" icon={iconAgainstClock} name="Contra o relógio" />
+      <Card link="#" icon={iconMaraton} name="Maratona" />
+      <Card link="#" icon={iconZen} name="Zen" />
     </Wrapper>
   );
 }
