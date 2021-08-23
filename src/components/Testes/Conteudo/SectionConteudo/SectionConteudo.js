@@ -1,17 +1,27 @@
 import React from 'react';
 import Button from '../../../UI/Button/Button';
+import Radio from './Radio/Radio';
+import Range from './Range/Range';
 
-import Wrapper, { Titulo, VerMais, Conteudo } from './SectionConteudo.styled';
+import Wrapper, {
+  Titulo,
+  Icone,
+  Descricao,
+  Botao,
+} from './SectionConteudo.styled';
 
 export default function SectionConteudo(props) {
-  const { titulo, href, conteudo } = props;
+  const { chave, titulo, icone, descricao, unidRange } = props;
   return (
     <Wrapper>
       <Titulo>{titulo}</Titulo>
-      <VerMais href={href}>
-        <Button>Ver mais</Button>
-      </VerMais>
-      <Conteudo>{conteudo}</Conteudo>
+      <Icone src={icone} alt={`Ícone ${titulo}`} />
+      <Descricao>{descricao}</Descricao>
+      <Range chave={`range-${chave}`} unidRange={unidRange} />
+      <Radio chave={`radio-${chave}`} />
+      <Botao>
+        <Button>Iniciar</Button>
+      </Botao>
     </Wrapper>
   );
 }

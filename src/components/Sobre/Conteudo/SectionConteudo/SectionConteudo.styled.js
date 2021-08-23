@@ -8,7 +8,7 @@ const Titulo = styled.h1`
   grid-area: titulo;
 `;
 
-const Conteudo = styled.div`
+const Conteudo = styled.p`
   grid-area: conteudo;
 `;
 

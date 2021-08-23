@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export default styled.button`
+  grid-area: button;
   background-color: #536dfe;
   color: white;
 
