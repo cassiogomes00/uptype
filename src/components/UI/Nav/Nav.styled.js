@@ -13,6 +13,8 @@ export default styled.nav`
   background-color: #f1f1f1;
   height: 100%;
 
+  border: 2px solid white;
+
   @media (max-width: 500px) {
     flex-direction: row;
 

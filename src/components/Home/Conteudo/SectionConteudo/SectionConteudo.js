@@ -1,12 +1,17 @@
 import React from 'react';
+import Button from '../../../UI/Button/Button';
 
-import Wrapper from './SectionConteudo.styled';
+import Wrapper, { Titulo, VerMais, Conteudo } from './SectionConteudo.styled';
 
 export default function SectionConteudo(props) {
-  const {titulo, href, conteudo}
-  return <Wrapper>
-    <h1>{titulo}</h1>
-    <a href={href}><span>Ver mais</span></a>
-    <div>{conteudo}</div>
-  </Wrapper>;
+  const { titulo, href, conteudo } = props;
+  return (
+    <Wrapper>
+      <Titulo>{titulo}</Titulo>
+      <VerMais href={href}>
+        <Button>Ver mais</Button>
+      </VerMais>
+      <Conteudo>{conteudo}</Conteudo>
+    </Wrapper>
+  );
 }

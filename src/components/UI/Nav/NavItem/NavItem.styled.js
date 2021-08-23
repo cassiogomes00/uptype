@@ -12,7 +12,12 @@ export default styled.a`
 
 const Icon = styled.img`
   width: 100%;
-  max-width: 40px; ;
+  max-width: 40px;
+
+  :hover {
+    max-width: 50px;
+    transition: 0.15s ease-in-out;
+  }
 `;
 
 export { Icon };
