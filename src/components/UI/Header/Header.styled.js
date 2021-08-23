@@ -1,5 +1,16 @@
 import styled from 'styled-components';
 
-export default Wrapper = styled.header`
-  background-color: yellow;
+export default styled.header`
+  grid-area: header;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  background-color: #fbc02d;
+  color: #ffffff;
+
+  font-weight: ;
+
+  padding: 5px;
 `;
