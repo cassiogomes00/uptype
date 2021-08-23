@@ -10,7 +10,7 @@ export default styled.header`
   background-color: #fbc02d;
   color: #ffffff;
 
-  font-weight: ;
+  font-weight: bold;
 
   padding: 5px;
 `;
