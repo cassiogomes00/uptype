@@ -5,7 +5,7 @@ export default styled.div`
   flex-direction: column;
   align-items: center;
 
-  padding: 10px;
+  padding: 10px 2px;
   margin: 5px;
   background-color: #f1f1f1;
 

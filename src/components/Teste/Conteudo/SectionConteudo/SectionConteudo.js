@@ -8,16 +8,14 @@ import {
   alterarZen,
 } from '../../../../store/Testes/Testes.actions';
 
-import { iniciarTeste } from '../../../../store/Teste/Teste.actions';
-
 import Wrapper from './SectionConteudo.styled';
 
-import Titulo from './Titulo/Titulo';
+import Titulo from '../Titulo/Titulo';
 import Icone from './Icone/Icone';
 import Descricao from './Descricao/Descricao';
 import Range from './Range/Range';
 import Radios from './Radios/Radios';
-import Button from './Button/Button';
+import Button from '../Button/Button';
 
 export default function SectionConteudo(props) {
   const { chave, titulo, icone, descricao, unidRange } = props;
@@ -49,8 +47,6 @@ export default function SectionConteudo(props) {
       default:
         console.error('Chave alterada');
     }
-
-    dispatch(iniciarTeste(chave, tamanho));
   };
 
   return (
@@ -58,13 +54,14 @@ export default function SectionConteudo(props) {
       <Titulo>{titulo}</Titulo>
       <Icone src={icone} alt={`Ícone ${titulo}`} />
       <Descricao>{descricao}</Descricao>
+
       <Range
         chave={`range-${chave}`}
         unidRange={unidRange}
         alterarTamanho={alterarTamanho}
       />
       <Radios chave={`radio-${chave}`} alterarModo={alterarModo} />
-      <Link to="/teste" style={{ gridArea: 'botao' }}>
+      <Link to="/teste">
         <Button alterarEstado={alterarEstado}>Iniciar</Button>
       </Link>
     </Wrapper>
