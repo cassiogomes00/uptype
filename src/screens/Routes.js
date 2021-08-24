@@ -5,6 +5,7 @@ import Home from './Home/Home';
 import Testes from './Testes/Testes';
 import Teste from './Teste/Teste';
 import Ranking from './Ranking/Ranking';
+import Historico from './Historico/Historico';
 import Sobre from './Sobre/Sobre';
 
 export default function Routes() {
@@ -24,7 +25,7 @@ export default function Routes() {
           <Ranking />
         </Route>
         <Route exact path="/historico">
-          <Histori />
+          <Historico />
         </Route>
         <Route exact path="/sobre">
           <Sobre />

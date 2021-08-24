@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 export default styled.section`
   display: grid;
-  grid-template-rows: 1fr 4fr;
   grid-template-columns: 7fr 2fr;
   grid-row-gap: 10px;
   grid-template-areas:
@@ -14,5 +13,3 @@ export default styled.section`
     grid-template-rows: 1fr 12fr;
   }
 `;
-
-
