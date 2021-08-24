@@ -23,6 +23,9 @@ export default function Routes() {
         <Route exact path="/ranking">
           <Ranking />
         </Route>
+        <Route exact path="/historico">
+          <Histori />
+        </Route>
         <Route exact path="/sobre">
           <Sobre />
         </Route>

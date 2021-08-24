@@ -6,7 +6,7 @@ import Conteudo from '../../components/Ranking/Conteudo/Conteudo';
 import Header from '../../components/UI/Header/Header';
 import Nav from '../../components/UI/Nav/Nav';
 
-export default function Home() {
+export default function Ranking() {
   return (
     <Wrapper>
       <Header />
