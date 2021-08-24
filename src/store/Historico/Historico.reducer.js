@@ -1,4 +1,4 @@
-const defaultState = [{ data: null, velocidade: 0 }];
+const defaultState = [{ data: new Date(), velocidade: 0 }];
 
 export default function historicoReducer(state = defaultState, action) {
   const { type, payload } = action;
